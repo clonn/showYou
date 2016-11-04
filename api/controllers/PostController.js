@@ -17,7 +17,7 @@ module.exports = {
       };
 
       let post = await Post.create(param);
-      post.setUser(user);
+      await post.setUser(user.id);
       return res.json({
         status: 'ok',
         body: {

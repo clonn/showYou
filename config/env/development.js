@@ -29,12 +29,12 @@ module.exports = {
     database: {
       'user': process.env.MYSQL_ENV_MYSQL_USER_NAME || 'root',
       'password': process.env.MYSQL_ENV_MYSQL_USER_PASS || 'root',
-      'database': process.env.MYSQL_ENV_MYSQL_USER_DB || 'starter',
+      'database': process.env.MYSQL_ENV_MYSQL_USER_DB || 'showyou',
       'host': 'localhost',
-      'dialect': 'sqlite', // mysql
-      storage: './database.sqlite',
+      'dialect': 'mysql', // mysql
+      // storage: './database.sqlite',
       options: {
-        'dialect': 'sqlite', // mysql
+        'dialect': 'mysql', // mysql
       //   'host': process.env.MYSQL_PORT_3306_TCP_ADDR || '127.0.0.1',
       //   'port': process.env.MYSQL_PORT_3306_TCP_PORT || 3306,
         

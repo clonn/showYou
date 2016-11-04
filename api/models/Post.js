@@ -13,7 +13,7 @@ module.exports = {
       allowNull: false
     },
     describe: {
-      type: Sequelize.STRING,
+      type: Sequelize.TEXT,
     }
   },
   associations: function() {
