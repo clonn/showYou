@@ -23,7 +23,7 @@ module.exports = {
         body: {
           id: post.id
         }
-      })
+      });
     } catch (e) {
       return res.serverError(e);
     }
